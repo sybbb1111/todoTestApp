@@ -38,9 +38,10 @@ public class TodoServiceImpl implements TodoService{
         }
 
         //저장용 (랜덤)파일명
+
         String savedFileNm = MyFileUtils.makeRandomFileNm(p.getPic().getOriginalFilename());
 
-        File tempFile = new File(String.format(tempDic.getPath(), savedFileNm));
+        File tempFile = new File(tempDic.getPath(), savedFileNm);
 
         try {
             p.getPic().transferTo(tempFile);

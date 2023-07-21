@@ -36,5 +36,5 @@ spring:
   sql:
     init:
       mode: always
-      schema-locations: init/schema.sql
-      data-locations: init/data.sql
+      schema-locations: classpath:init/schema.sql
+      data-locations: classpath:init/data.sql
